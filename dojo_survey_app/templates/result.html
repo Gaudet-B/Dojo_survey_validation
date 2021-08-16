@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body style="background-image: url('static/green-wall-texture-background.jpg'); -webkit-background-size: cover; min-height: 100vh;">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.4); -webkit-background-size: cover; min-height: 100vh; padding-top: 50px;">
+        <div class="rounded-3 container d-flex flex-column bg-secondary" style="width: 440px; height: 700px; margin: auto; padding: 20px;">
+            <h1 class="display-5 mt-3" style="color: chartreuse;"><strong> {{ dojo[0]['name'] }} </strong></h1><br>
+            <h5 style="color: whitesmoke;">Dojo Location: </h5> <h5 style="color: chartreuse;"> {{ dojo[0]['location'] }} </h5><br>
+            <h5 style="color: whitesmoke;">Favorite Language: </h5> <h5 style="color: chartreuse;"> {{ dojo[0]['language'] }} </h5><br>
+            <h5 style="color: whitesmoke;">Comments: </h5>
+            <p style="color: whitesmoke;"></p><p style="color: chartreuse;"> {{ dojo[0]['comment'] }} </p>
+        </div>
+    </div>
+</body>
+</html>
